@@ -1,0 +1,28 @@
+<div class="container-fluid">  
+    <div layout="row">
+        <mat-toolbar style="background-color: black;color:white;width:100%;">
+          <span>Change Password</span>           
+          </mat-toolbar>
+     <div layout="row" style="background-color: lightgrey;width:100%;padding:4%;">
+  <div class="example-container">
+    <mat-form-field>
+        <input matInput placeholder="Old password" [type]="hide ? 'password' : 'text'">
+        <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+      </mat-form-field>
+
+      <mat-form-field>
+          <input matInput placeholder="New password" [type]="hide ? 'password' : 'text'">
+          <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Confirm password" [type]="hide ? 'password' : 'text'">
+            <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+          </mat-form-field>
+          </div>
+          <div layout="row">
+            <span style="padding-left: 25%;"><button mat-raised-button color="primary"> Submit</button></span>
+            <span style="padding-left: 10%;"><button mat-raised-button (click)="onNoClick()" color="primary"> Cancel</button></span>
+            
+          </div>
+</div>
+</div>

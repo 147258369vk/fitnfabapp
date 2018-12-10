@@ -1,0 +1,48 @@
+<div layout="row">
+  <mat-toolbar style="background-color: black;color:white;width:100%;">
+    <span>Sign Up</span>           
+    </mat-toolbar>
+<div layout="row">
+<div style="background-color: lightgrey;width:100%;padding:5%;">    
+  <form  #signupForm="ngForm" (ngSubmit)="onSubmit(signupForm)">   
+<div class="example-container">
+        <mat-form-field>
+          <input matInput placeholder="Enter your FullName" [(ngModel)]="userService.selectedUser.fullname" name="fullname" required #fullname="ngModel">
+        </mat-form-field>
+      </div>
+<div class="example-container">
+    <mat-form-field>
+      <input matInput placeholder="Enter your email" [(ngModel)]="userService.selectedUser.email" name="email" required #email="ngModel">
+      <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+    </mat-form-field>
+  </div>
+
+  <div class="example-container">
+        <mat-form-field>
+          <input matInput placeholder="Enter your password" [type]="hide ? 'password' : 'text'" [(ngModel)]="userService.selectedUser.password" name="password" #password="ngModel" required>
+          <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility_off'}}</mat-icon>
+        </mat-form-field>
+        
+        <div class="button-row">
+            <button mat-raised-button color="primary" style="margin-left:45%;">Signup</button>
+            </div>    
+            <div  *ngIf="showSuccessMessage">
+              Saved Succesfully
+            </div>
+            <div *ngIf="serverErrorMessages">
+               {{serverErrorMessages}}
+            </div>
+        <div style="margin-left:28%;margin-top:6%">
+          You already have an account?<br>
+             <a style="margin-left:15%;color:purple" (click)="openDialog()"> Login here
+          </a>
+
+        </div>    
+
+      </div>
+     
+    </form>
+    
+</div>
+</div>
+</div>

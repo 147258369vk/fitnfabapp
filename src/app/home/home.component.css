@@ -1,0 +1,247 @@
+*{
+  cursor: pointer;
+}
+
+.clearfix {
+  overflow-x: hidden;
+}
+.spacing{
+    font-size:1.3vw;
+        
+}
+
+.bgimage
+{
+    background:url('/assets/fondo-gym.jpg') no-repeat center center;
+    background-size:100% 100%;
+    min-height: 100%;
+    padding-top:20%;
+    padding-bottom:20%;
+}
+
+.p3{
+    color:rgb(142,204,59);
+}
+
+.centered1 {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:white;
+    font-size:5.5vw;
+    text-shadow: 0 5px 10px rgba(242, 247, 244, 0.329);
+    font-family: Arial;
+}
+
+.centered2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:white;
+    font-size:5.5vw;
+    text-shadow: 0 5px 10px rgba(242, 247, 244, 0.329);
+    font-family: Arial;
+}
+
+.centered3 {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:white;
+    font-size:1.4vw;
+    text-shadow: 0 5px 10px rgba(242, 247, 244, 0.329);
+    font-family: Arial;
+}
+
+.centered4 {
+  position: relative;
+  margin:3% 0% 3% 45%;
+  background-color:rgb(142,204,59);
+  font-size: 1vw;
+  border-radius: 50px;
+}
+
+.centered5 {
+  position: relative;
+  margin:3% 0% 3% 45%;
+  background-color:rgb(142,204,59);
+  font-size: 1vw;
+  border-radius: 50px;
+}
+
+
+.button1{
+    font-size: 1vw;
+    border-radius: 50px;
+    background-color:rgb(142,204,59);
+    left:45%;
+    top:80%;
+    position: absolute;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url('/assets/para5.jpg');
+
+  /* Set a specific height */
+  min-height: 450px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: center;
+  background-size: cover;
+}
+
+.para{
+   /* The image used */
+   background-image: url('/assets/para1.jpg');
+
+  
+  /* Set a specific height */
+  min-height: 450px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.para1{
+  /* The image used */
+  background-image: url('/assets/para2.jpg');
+
+
+  /* Set a specific height */
+  min-height: 450px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.para2{
+  /* The image used */
+  background-image: url('../../assets/run.jpg');
+
+
+  /* Set a specific height */
+  min-height: 600px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+  background:grey;
+}
+
+.hovereffect .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  padding: 50px 20px;
+}
+
+.hovereffect img {
+  display: block;
+  position: relative;
+  max-width: none;
+  width: calc(100% + 20px);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(-10px,0,0);
+  transform: translate3d(-10px,0,0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.hovereffect:hover img {
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+.hovereffect h2 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  overflow: hidden;
+  padding: 0.5em 0;
+  background-color: transparent;
+}
+
+.hovereffect h2:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  content: '';
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  -webkit-transform: translate3d(-100%,0,0);
+  transform: translate3d(-100%,0,0);
+}
+
+.hovereffect:hover h2:after {
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+.hovereffect a, .hovereffect p {
+  color: #FFF;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(100%,0,0);
+  transform: translate3d(100%,0,0);
+}
+
+.hovereffect:hover a, .hovereffect:hover p {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+.example-card {
+  max-width: 400px;
+}
+
+.example-header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  line-height: 60px;
+}

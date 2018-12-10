@@ -1,0 +1,141 @@
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="/home">Fit&Fab</a>
+    </div>
+    <div class="spacing">
+          <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-left">
+        <li><a href="/home">Home</a></li>
+        <li class="active"><a href="/workout">Workout Plans</a></li>
+            <li><a href="/nutrition">Nutrition Plans</a></li>
+        <li><a routerLink="/store">Store</a></li>
+      </ul>
+      <form class="navbar-form navbar-left" action="">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Search" name="search">
+          <div class="input-group-btn">
+            <button class="btn btn-default" type="submit">
+              <i class="glyphicon glyphicon-search"></i>
+            </button>
+          </div>
+        </div>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span>Profile<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a routerLink="/home">Account Info</a></li>
+              <li><a routerLink="/home">Your Orders</a></li>
+              <li><a routerLink="/changepassword">Change Password</a></li>
+              </ul>
+        <li><a routerLink="/cart"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+        <li><a (click)="openDialog()"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+      </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid" style="padding-bottom: 0px !important;padding-block-end: 0px;">
+  <div style="text-align:center;color:black;padding: 5% 5% 5% 5%">
+   <h2 style="font-family:'Times New Roman', Times, serif"><b> Workout Plans</b></h2>
+   <h3 style="font-family:'Times New Roman', Times, serif;color:grey;"><b>The most comprehensive database of free workout routines anywhere! </b></h3>
+<hr style="border:0.5px solid black;width:90%;">
+
+  <div class="row">
+
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" style="margin-top:1%;padding-left:27px;padding: 15px 15px 15px 15px;">
+  <div class="hovereffect">
+      <img class="img-responsive" src="../assets/main.jpg" alt="" style="height:200px;">
+          <div class="overlay">
+              <h2>Abs</h2>
+      <p>
+        <a routerLink="abs">Show more..</a>
+      </p>
+          </div>
+  </div>
+</div>
+
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" style="margin-top:1%;padding-left:27px;padding: 15px 15px 15px 15px;">
+  <div class="hovereffect">
+      <img class="img-responsive" src="../assets/b11.jpg" alt="" style="height: 200px;">
+          <div class="overlay">
+              <h2>Biceps</h2>
+      <p>
+        <a routerLink="bicep">Show more..</a>
+      </p>
+          </div>
+  </div>
+</div>
+
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" style="margin-top:1%;padding-left:27px;padding: 15px 15px 15px 15px;">
+    <div class="hovereffect">
+        <img class="img-responsive" src="../assets/chest1.jpg" alt="" style="height:200px;">
+            <div class="overlay">
+                <h2>Chest</h2>
+        <p>
+          <a routerLink="chest">Show more..</a>
+        </p>
+            </div>
+    </div>
+  </div>
+
+  <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" style="margin-top:1%;padding-left:27px;padding: 15px 15px 15px 15px;">
+      <div class="hovereffect">
+          <img class="img-responsive" src="../assets/main leg.jpg" alt="" style="height:200px;">
+              <div class="overlay">
+                  <h2>Legs</h2>
+          <p>
+            <a routerLink="leg">Show more..</a>
+          </p>
+              </div>
+      </div>
+    </div>
+    
+  </div>
+  <div class="row">
+
+    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" style="margin-top:1%;padding-left:27px;padding: 15px 15px 15px 15px;">
+        <div class="hovereffect">
+            <img class="img-responsive" src="../assets/s6.jpg" alt="" style="height:200px;">
+                <div class="overlay">
+                    <h2>Shoulders</h2>
+            <p>
+              <a routerLink="shoulder">Show more..</a>
+            </p>
+                </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" style="margin-top:1%;padding-left:27px;padding: 15px 15px 15px 15px;">
+          <div class="hovereffect">
+              <img class="img-responsive" src="../assets/tri.jpg" alt=""  style="height:200px;">
+                  <div class="overlay">
+                      <h2>Triceps</h2>
+              <p>
+                <a routerLink="tricep">Show more..</a>
+              </p>
+                  </div>
+          </div>
+        </div>
+        
+       <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" style="margin-top:1%;padding-left:27px;padding: 15px 15px 15px 15px;">
+            <div class="hovereffect">
+                <img class="img-responsive" src="../assets/v1.jpg" alt="" style="height:200px;"> 
+                    <div class="overlay">
+                        <h2>V-Shape</h2>
+                <p>
+                  <a routerLink="vshape">Show more..</a>
+                </p>
+                    </div>
+            </div>
+          </div>
+    </div>
+    </div>
+    <router-outlet></router-outlet>

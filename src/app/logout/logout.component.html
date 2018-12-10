@@ -1,0 +1,17 @@
+<div layout='row' >
+    <mat-toolbar style="background-color: black;color:white;width:100%;">
+        <span>Logout</span>           
+        </mat-toolbar>
+<mat-card style='width:100%;background-color: dimgray;'>
+<mat-card-content style="margin-left:20%;color:white">
+     <p> Are you sure you want to logout?</p>
+</mat-card-content>
+    <!-- <mat-form-field style="margin-left:20%;width:50%">
+      <input matInput placeholder="Enter your email" [formControl]="email" required>
+      <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>   
+    </mat-form-field><br><br> -->
+    <button mat-raised-button color="primary"style="margin-left:20%" (click)="onNoClick()">Cancel</button>
+    <button mat-raised-button color="primary"style="margin-left:20%" (click)="logout()">Ok</button>
+
+</mat-card>
+</div>

@@ -1,0 +1,30 @@
+<div class="container-fluid" style="padding-top: 10%;">
+    <div layout="row">
+        <mat-toolbar style="background-color: black;color:white;width:100%;">
+          <span>Admin Login</span>           
+          </mat-toolbar>
+     <div layout="row" style="background-color: lightgrey;width:100%;padding:4%;">
+  <div class="example-container">
+ 
+<form #form="ngForm" (ngSubmit)="onsubmit(form)">
+<div class="example-container">
+    <mat-form-field>
+      <input matInput placeholder="Enter your username"  #username ="ngModel" name="username" [(ngModel)]="userservice.adminuser.username" required>
+      <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+    </mat-form-field>
+  </div>
+
+  <div class="example-container">
+      <mat-form-field>
+        <input matInput placeholder="Enter your password" [type]="hide ? 'password' : 'text'" name="password" #password="ngModel" [(ngModel)]="userservice.adminuser.password" required minlength="6">
+        <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility_off'}}</mat-icon>
+      </mat-form-field>
+  </div>
+
+      <div class="button-row">
+          <button mat-raised-button color="primary">Submit</button>
+          </div>    
+      </form>  
+
+    </div>
+  </div>

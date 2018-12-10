@@ -1,0 +1,41 @@
+*{
+    cursor: pointer;
+  }
+  .spacing{
+      font-size:1.3vw;
+          
+  }
+  
+  .example-card {
+    display:inline-block;
+    max-width: 300px;
+    position: relative;
+  }
+  
+  .example-header-image {
+    background-size: cover;
+  }
+  
+  .centered {
+    position: relative;
+    margin:5% 0% 1% 45%;
+    background-color:rgb(142,204,59);
+    font-size: 1vw;
+    border-radius: 50px;
+  }
+
+  .centered1 {
+    position: relative;
+    margin:5% 0% 1% 45%;
+    background-color:rgb(142,204,59);
+    font-size: 1vw;
+    border-radius: 50px;
+  }
+
+  .centered2 {
+    position: relative;
+    margin:5% 0% 1% 45%;
+    background-color:rgb(142,204,59);
+    font-size: 1vw;
+    border-radius: 50px;
+  }

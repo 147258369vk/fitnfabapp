@@ -1,0 +1,16 @@
+*{
+  cursor: pointer;
+}
+.spacing{
+    font-size:1.3vw;
+        
+}
+
+.example-card {
+    max-width: 800px;
+ 
+  }
+  
+  /* .example-header-image {
+    background-size: cover;
+  } */

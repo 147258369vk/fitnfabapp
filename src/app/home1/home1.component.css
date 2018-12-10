@@ -1,0 +1,66 @@
+*{
+    cursor: pointer;
+  }
+  
+  .clearfix {
+    overflow-x: hidden;
+  }
+  .spacing{
+      font-size:1.3vw;        
+  }
+  
+  .bgimage
+  {
+      background:url('/assets/fondo-gym.jpg') no-repeat center center;
+      background-size:100% 100%;
+      min-height: 100%;
+      padding-top:20%;
+      padding-bottom:20%;
+  }
+  
+  .p3{
+      color:rgb(142,204,59);
+  }
+  
+  .centered1 {
+      position: absolute;
+      top: 35%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color:white;
+      font-size:5.5vw;
+      text-shadow: 0 5px 10px rgba(242, 247, 244, 0.329);
+      font-family: Arial;
+  }
+  
+  .centered2 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color:white;
+      font-size:5.5vw;
+      text-shadow: 0 5px 10px rgba(242, 247, 244, 0.329);
+      font-family: Arial;
+  }
+  
+  .centered3 {
+      position: absolute;
+      top: 65%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color:white;
+      font-size:1.4vw;
+      text-shadow: 0 5px 10px rgba(242, 247, 244, 0.329);
+      font-family: Arial;
+  }
+  
+.button1{
+    font-size: 1vw;
+    border-radius: 50px;
+    background-color:rgb(142,204,59);
+    left:45%;
+    top:80%;
+    position: absolute;
+}
+  

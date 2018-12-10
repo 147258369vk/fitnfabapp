@@ -1,0 +1,59 @@
+    <div class="container-fluid">
+        <div layout="row">
+            <mat-toolbar style="background-color: black;color:white;width:100%;">
+              <span>Shipping address</span>           
+              </mat-toolbar>
+         <div layout="row" style="background-color: lightgrey;width:100%;padding:4%;">
+      <div class="example-container">
+  <mat-form-field>
+    <input matInput placeholder="Fullname">
+  </mat-form-field>    
+  
+  <div class="example-container clearfix">
+    <mat-form-field>
+      <textarea matInput placeholder="Address"></textarea>
+    </mat-form-field>
+    <table>
+        <tr>
+          <td>
+    <form [formGroup]="stateForm">
+      <mat-form-field>
+        <input type="text" matInput placeholder="City" formControlName="stateGroup" required [matAutocomplete]="autoGroup">
+          <mat-autocomplete #autoGroup="matAutocomplete">
+            <mat-optgroup *ngFor="let group of stateGroupOptions | async" [label]="group.letter">
+              <mat-option *ngFor="let name of group.names" [value]="name">
+                {{name}}
+              </mat-option>
+          </mat-optgroup>
+        </mat-autocomplete>
+      </mat-form-field>
+      </form>
+    </td>
+      <td>
+      <mat-form-field class="example-full-width clearfix" style="padding-left: 25%;">
+        <input matInput #postalCode maxlength="5" placeholder="Postal Code" value="">
+        <mat-hint align="end">{{postalCode.value.length}} / 5</mat-hint>
+      </mat-form-field>
+</td>
+<td>
+      <mat-form-field class="example-full-width clearfix">
+        <span matPrefix>+91 &nbsp;</span>
+        <input type="tel" matInput #input maxlength="10" placeholder="Phone number">
+        <mat-hint align="end">{{input.value?.length || 0}}/10</mat-hint>
+        <mat-icon matSuffix>mode_edit</mat-icon> 
+      </mat-form-field>
+      </td>
+      </tr>
+
+      <tr></tr>
+      <tr>
+        
+        
+        <td><button mat-raised-button color="primary" routerLink="/store" required>Submit</button></td>
+        
+      </tr>
+      </table>
+    
+   
+  </div>
+  </div>

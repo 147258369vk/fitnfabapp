@@ -1,0 +1,51 @@
+<div layout="row">
+      <mat-toolbar style="background-color: black;color:white;width:100%;">
+        <span>Log In</span>           
+        </mat-toolbar>
+   <div layout="row">
+    <div style="background-color: lightgrey;width:100%;padding:4%;">    
+      <form #signinForm="ngForm" name="f" (ngSubmit)="onSubmit(signinForm)">   
+<div class="example-container">
+        <mat-form-field>
+          <input matInput placeholder="Enter your email" name="email" #email="ngModel" id="email" [(ngModel)]="model.email" required>
+          <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+        </mat-form-field>
+      </div>
+
+      <div class="example-container">
+            <mat-form-field>
+              <input matInput placeholder="Enter your password" [type]="hide ? 'password' : 'text'" name="password" #password="ngModel" [(ngModel)]="model.password" required minlength="6">
+              <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility_off'}}</mat-icon>
+            </mat-form-field>
+            
+
+            <div class="button-row">
+                <button mat-raised-button color="primary">Submit</button>
+                </div>    
+          
+            <div style="text-align:right;margin-left:10%;margin-top:-5%;">
+                <a (click)="openDialog2()" style="color:purple" >Forgot Password?</a>
+            </div>
+          
+            <div style="margin-left:38%;margin-top:8%;">
+              You don't have an account?<br>
+                 <a style="margin-left:12%;color:purple" (click)="openDialog1()"> SignUp here
+              </a>
+
+            </div>    
+
+          </div>
+          <div class="success" *ngIf="showSucessMessage">
+              Saved Succesfully
+            </div>
+            
+            <!-- Error message -->
+            <div class="alert" *ngIf="serverErrorMessages">
+              {{serverErrorMessages}}
+            </div>
+        </form>
+        <div class="success" *ngIf="showSuccessMessage">
+          Login Successfully      
+</div>
+</div>
+</div>
